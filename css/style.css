@@ -15,6 +15,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    padding: 8px;
+    color : #4f6781;
+}
+
 p {
     padding: 8px;
     color : #afbfd2;
