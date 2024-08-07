@@ -34,3 +34,11 @@ ul {
     color : #afbfd2;
     list-style-type: lower-greek;
 }
+
+label {
+    color : #afbfd2;
+}
+
+address {
+    color : #afbfd2;
+}
