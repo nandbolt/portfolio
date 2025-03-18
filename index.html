@@ -3,28 +3,42 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>Alexander Wilson</title>
+        <title>Home - Alex Wilson</title>
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
         <header>
             <h1>Alexander Wilson</h1>
             <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Notable Projects</a></li>
-                    <ul>
-                        <li><a href="#graphmatical">Graphmatical!</a></li>
-                        <li><a href="#planar-escape">Planar Escape</a></li>
-                        <li><a href="#rwt">Radioactive Waste Training</a></li>
-                    </ul>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#graphmatical">Graphmatical!</a>
+                <a href="#planar-escape">Planar Escape</a>
+                <a href="#rwt">Radioactive Waste Training</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
         <section id="intro">
-            <img src="images/nand-gate-1.gif" alt="A powered nand gate with the text nandbolt on it."/>
+            <center>
+                <p id="world">Insert world here.</p>
+                <p>
+                    ||<br>
+                    _---_______________________---_<br>
+                    |---
+                    <button onclick="player.keepForward()">^</button>
+                    -----------------------|<br>
+                    |
+                    <button onclick="player.turnLeft()"><</button>
+                    --
+                    <button onclick="player.turnRight()">></button>
+                    ---
+                    <button onclick="game.restart()">R</button>
+                    ------------
+                    |<br>
+                    |________--------------________|<br>
+                    |________--------------________|<br>
+                </p>
+            </center>
             <p id="greeting">
                 Hello there!
             </p>
@@ -229,5 +243,6 @@
             </address>
         </section>
     </footer>
-    <script type="text/javascript" src="js/greeting-generator.js"></script>
+    <script src="js/greeting-generator.js"></script>
+    <script src="js/dont-crash.js"></script>
 </html>

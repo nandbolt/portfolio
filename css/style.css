@@ -42,3 +42,24 @@ label {
 address {
     color : #afbfd2;
 }
+
+button {
+    background-color: #afbfd2;
+    color: black;
+    border-color: #afbfd2;
+    box-shadow: 0 4px #afbfd2;
+}
+
+button:hover {
+    background-color: black;
+    color: #afbfd2;
+    border-color: ##afbfd2;
+    box-shadow: 0 4px #afbfd2;
+}
+
+button:active {
+    background-color: black;
+    color: afbfd2;
+    box-shadow: 0 0px #afbfd2;
+    transform: translateY(4px);
+}
