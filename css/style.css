@@ -5,19 +5,24 @@ html {
 
 body {
     width: auto;
-    margin: 0 32px;
-    padding: 0 32px 32px 32px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    padding: 8px;
-    color : #4f6781;
+    padding: 0 0 0 0;
+    color : #afbfd2;
     text-align: center;
 }
 
 h2 {
     padding: 8px;
     color : #4f6781;
+}
+
+h3 {
+    color : #4f6781;
+    text-align: center;
 }
 
 p {
@@ -53,13 +58,56 @@ button {
 button:hover {
     background-color: black;
     color: #afbfd2;
-    border-color: ##afbfd2;
+    border-color: #afbfd2;
     box-shadow: 0 4px #afbfd2;
 }
 
 button:active {
     background-color: black;
-    color: afbfd2;
+    color: #afbfd2;
     box-shadow: 0 0px #afbfd2;
     transform: translateY(4px);
+}
+
+section {
+    scroll-margin-top: 160px;
+}
+
+.topheader {
+    background-color: #141414;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    background-color: #3d4349;
+    padding: 8px 8px 8px 8px;
+}
+
+.topnav a {
+    color: #cdf7e2;
+    text-align: center;
+    padding: 2px 16px;
+}
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.topnav a.active {
+    background-color: #cdf7e2;
+    color: #28312d;
+}
+
+.main {
+    margin-top: 200px;
+    width: auto;
+    margin: 200px 32px 32px 32px;
+    padding: 0 32px 32px 32px;
 }
