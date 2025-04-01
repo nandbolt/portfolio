@@ -5,24 +5,15 @@
         <meta name="viewport" content="width=device-width" />
         <title>Home - Alex Wilson</title>
         <link href="css/style.css" rel="stylesheet" />
+        <script src="components/header.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="topheader">
-                <h1>Alexander Wilson</h1>
-                <h3>( Software Engineer | Game Designer )</h3>
-                <div class="topnav">
-                    <a href="#">Home</a>
-                    <a href="#about">About Me</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#graphmatical">Graphmatical!</a>
-                    <a href="#planar-escape">Planar Escape</a>
-                    <a href="#rwt">Radioactive Waste Training</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </header>
+        <header-component
+            top-nav='[{"text":"Main","href":"#"},{"text":"All Projects","href":"pages/projects.html"},{"text":"Tutorials","href":"pages/tutorials.html"},{"text":"Blog","href":"pages/blogs.html"},{"text":"Contact","href":"pages/contact.html"}]'
+            sub-nav='[{"text":"Top","href":"#"},{"text":"About","href":"#about"},{"text":"Skills","href":"#skills"},{"text":"Experience","href":"#experience"},{"text":"Projects","href":"#projects"}]'>
+        </header-component>
         <div class="main">
+            <!-- INTRO -->
             <section id="intro">
                 <center>
                     <p id="world">Insert world here.</p>
@@ -55,6 +46,8 @@
                     in JavaScript as well, so if you get bored of stern anaylsis maybe give it a go!
                 </p>
             </section>
+            
+            <!-- ABOUT -->
             <section id="about">
                 <h1>About Me</h1>
                 <img src="images/selfie-1.jpg" width="200px" alt="A selfie of me outside."/>
@@ -103,6 +96,8 @@
                     some of my favorite games were made in it.
                 </p>
             </section>
+            
+            <!-- SKILLS -->
             <section id="skills">
                 <h1>Skills</h1>
                 <h2>Programming Languages</h2>
@@ -142,6 +137,38 @@
                     </ul>
                 </ul>
             </section>
+
+            <!-- EXPERIENCE -->
+            <section id="experience">
+                <h1>Experience</h1>
+                <section id="iliagc">
+                    <h2>ILIAGC: I Live In A Graphing Calculator</h2>
+                    <img src="images/iliagc-1.gif" alt="Gameplay of ILIAGC."/>
+                    <ul>
+                        <li>Overview: A graphing calculator + 2D platformer with a focus on education.</li>
+                        <li>Made with: GameMaker, GML</li>
+                        <li>Solo project</li>
+                        <li>Development: Done</li>
+                        <li>Origin: Started as a class project.</li>
+                        <li>Technical challenges:</li>
+                        <ul>
+                            <li>
+                                Graphing calculator: There were many hurdles that needed to
+                                be overcome for the graphing calculator. The player had to
+                                be able to type in any valid math function anywhere in the
+                                level. The equation needed to be parsed into something that
+                                could be evaluated so that it could be graphed. Lastly, the
+                                graph should be interactable by the player in a physically
+                                believeable way.
+                            </li>
+                        </ul>
+                        <li>Game page: <a href="https://www.coolmathgames.com/0-iliagc">https://www.coolmathgames.com/0-iliagc</a></li>
+                        <li>Trailer: <a href="https://youtu.be/pV9QjFDXmaA">https://youtu.be/pV9QjFDXmaA</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- PROJECTS -->
             <section id="projects">
                 <h1>Notable Projects</h1>
                 <section id="graphmatical">
@@ -245,6 +272,6 @@
             </address>
         </section>
     </footer>
-    <script src="js/greeting-generator.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/dont-crash.js"></script>
 </html>

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
@@ -79,13 +85,13 @@ section {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0 0 0 0;
+    padding: 16px 0 0 0;
 }
 
 .topnav {
     display: flex;
     justify-content: center;
-    background-color: #3d4349;
+    background-color: #656e77;
     padding: 8px 8px 8px 8px;
 }
 
@@ -101,6 +107,29 @@ section {
 }
 
 .topnav a.active {
+    background-color: #cdf7e2;
+    color: #28312d;
+}
+
+.subtopnav {
+    display: flex;
+    justify-content: center;
+    background-color: #3d4349;
+    padding: 8px 8px 8px 8px;
+}
+
+.subtopnav a {
+    color: #cdf7e2;
+    text-align: center;
+    padding: 2px 16px;
+}
+
+.subtopnav a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.subtopnav a.active {
     background-color: #cdf7e2;
     color: #28312d;
 }
