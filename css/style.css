@@ -157,3 +157,29 @@ section {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.horizontal-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 8px 0 8px 0;
+}
+
+showcase-component {
+    width: 33%;
+    padding: 0 8px 0 8px;
+}
+
+.scaleable {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.material-icons {
+    color: white;
+}

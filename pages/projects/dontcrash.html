@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>ILIAGC - Alex Wilson</title>
+        <title>DONTCRASH - Alex Wilson</title>
         <link type="text/css" href="../../css/style.css" rel="stylesheet" />
         <script src="../../components/header.js" defer></script>
     </head>
@@ -15,12 +15,27 @@
         <div class="main">
             <section id="intro">
                 <h1>DONTCRASH</h1>
-                <img src="../../images/buffer.gif" alt="Spinning blue coin."/>
-                <p>If I could stop time, there would be something here!
-                    But I guess I'm doing something else right now...
+                <p id="world" class="dontcrash">Insert world here.</p>
+                <p class="dontcrash">
+                    ||<br>
+                    _---_______________________---_<br>
+                    |---
+                    <button onclick="player.keepForward()">^</button>
+                    -----------------------|<br>
+                    |
+                    <button onclick="player.turnLeft()"><</button>
+                    --
+                    <button onclick="player.turnRight()">></button>
+                    ---
+                    <button onclick="game.restart()">R</button>
+                    ------------
+                    |<br>
+                    |________--------------________|<br>
+                    |________--------------________|<br>
                 </p>
             </section>
         </div>
     </body>
+    <script src="../../js/dont-crash.js"></script>
     <script src="../../js/nav-highligher.js" id="navHighlighter" pageIdx="-1"></script>
 </html>
