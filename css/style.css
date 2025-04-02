@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 
 html {
     background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'MuseoModerno', 'Courier New', Courier, monospace;
 }
 
 body {
@@ -29,6 +31,7 @@ h2 {
 h3 {
     color : #4f6781;
     text-align: center;
+    padding-bottom: 8px;
 }
 
 p {
@@ -44,6 +47,15 @@ img {
 ul {
     color : #afbfd2;
     list-style-type: lower-greek;
+}
+
+.contact {
+    color : #afbfd2;
+    list-style-type: none;
+}
+
+.contact li {
+    padding: 0 0 8px 0;
 }
 
 label {
@@ -76,7 +88,7 @@ button:active {
 }
 
 section {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 200px;
 }
 
 .topheader {
@@ -139,4 +151,9 @@ section {
     width: auto;
     margin: 200px 32px 32px 32px;
     padding: 0 32px 32px 32px;
+}
+
+.dontcrash {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }

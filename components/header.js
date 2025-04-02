@@ -15,9 +15,24 @@ class HeaderComponent extends HTMLElement
         const subNavLinks = subNavData ? JSON.parse(subNavData) : [];
 
         // Generate HTML
-        const generateNavHTML = (links) =>
-            links.map(link => `<a href="${link.href}">${link.text}</a>`).join("");
+        const generateTopNavHTML = (links) => {
+            let text = "";
+            for (let i = 0; i < links.length; i++)
+            {
+                text += `<a href="${links[i].href}" class="topnav-button" id="topnav-${i.toString()}">${links[i].text}</a>`;
+            }
+            return text;
+        }
+        const generateSubNavHTML = (links) => {
+            let text = "";
+            for (let i = 0; i < links.length; i++)
+            {
+                text += `<a href="${links[i].href}" class="subnav-button" id="subnav-${i.toString()}">${links[i].text}</a>`;
+            }
+            return text;
+        }
 
+        // Set HTML
         this.innerHTML = `
             <header>
                 <div class="topheader">
@@ -25,8 +40,8 @@ class HeaderComponent extends HTMLElement
                         <h1>Alexander Wilson</h1>
                         <h3>( Software Engineer | Game Designer )</h3>
                     </div>
-                    ${topNavLinks.length ? `<div class="topnav">${generateNavHTML(topNavLinks)}</div>` : ""}
-                    ${subNavLinks.length ? `<div class="subtopnav">${generateNavHTML(subNavLinks)}</div>` : ""}
+                    ${topNavLinks.length ? `<div class="topnav">${generateTopNavHTML(topNavLinks)}</div>` : ""}
+                    ${subNavLinks.length ? `<div class="subtopnav">${generateSubNavHTML(subNavLinks)}</div>` : ""}
                 </div>
             </header>
         `;
