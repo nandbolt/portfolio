@@ -42,6 +42,7 @@ p {
 img {
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
 }
 
 ul {
@@ -162,12 +163,19 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding: 8px 0 8px 0;
+    padding: 8px 8px 8px 8px;
+    background-color: #3d4349;
+    border-radius: 32px;
 }
 
 showcase-component {
     width: 33%;
     padding: 0 8px 0 8px;
+    margin: 0 auto 0 auto;
+    background-color: #141414;
+    border-radius: 32px;
+    padding: 32px;
+    max-height: 100%;
 }
 
 .scaleable {
@@ -182,4 +190,16 @@ showcase-component {
 
 .material-icons {
     color: white;
+}
+
+.text-container {
+    margin: 8px auto 8px auto;
+    background-color: #141414;
+    max-width: 1000px;
+    border-radius: 32px;
+    padding: 8px;
+}
+
+.section-title {
+    padding: 32px 0 16px 0;
 }
