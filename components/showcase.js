@@ -23,15 +23,16 @@ class ShowcaseComponent extends HTMLElement
         this.innerHTML = `
             <div class="showcase">
                 <img src="${mainImage}" alt="Gameplay of ${title}." class="scaleable"/>
-                <h3>${title}</h3>
+                <h3><a href="${projectLink}">${title}</a></h3>
                 <i class="material-icons">apartment</i><p class="inline">${company}</p>
                 <i class="material-icons">work</i><p class="inline">${role}</p>
                 <i class="material-icons">computer</i><p class="inline">${tech}</p>
                 <i class="material-icons">groups</i><p class="inline">${teamSize}</p>
                 <i class="material-icons">schedule</i><p class="inline">${time}</p>
                 <i class="material-icons">sync</i><p class="inline">${status}</p>
-                <p>${description}</p>
-                <a href="${projectLink}">View project</a>
+                <div class="showcase-text-container">
+                    <p>${description}</p>
+                </div>
             </div>
         `;
     }
