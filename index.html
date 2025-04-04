@@ -9,6 +9,7 @@
         <script src="components/header.js" defer></script>
         <script src="components/footer.js" defer></script>
         <script src="components/showcase.js" defer></script>
+        <script src="components/skills-showcase.js" defer></script>
     </head>
     <body>
         <header-component
@@ -98,42 +99,13 @@
             <!-- SKILLS -->
             <section id="skills">
                 <h1 class="section-title">Skills</h1>
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>Advanced</li>
-                    <ul>
-                        <li>GML (Python-like scripting language for GameMaker)</li>
-                    </ul>
-                    <li>Intermediate</li>
-                    <ul>
-                        <li>Python</li>
-                        <li>GDScript (Python-like scripting language for Godot)</li>
-                        <li>Lua</li>
-                    </ul>
-                    <li>Novice</li>
-                    <ul>
-                        <li>C#</li>
-                        <li>C++</li>
-                        <li>MATLAB</li>
-                        <li>Webstack (HTML, CSS, JavaScript)</li>
-                        <li>Java</li>
-                    </ul>
-                </ul>
-                <h2>Game Engines</h2>
-                <ul>
-                    <li>Advanced</li>
-                    <ul>
-                        <li>GameMaker Studio 2</li>
-                    </ul>
-                    <li>Intermediate</li>
-                    <ul>
-                        <li>Godot</li>
-                    </ul>
-                    <li>Novice</li>
-                    <ul>
-                        <li>Unity</li>
-                    </ul>
-                </ul>
+                <div class="horizontal-container">
+                    <skills-showcase-component title="Programming Languages" skills='[{"skill":"GML","level":"3"},{"skill":"C#","level":"2"},{"skill":"Python","level":"2"},{"skill":"JavaScript","level":"2"},{"skill":"Lua","level":"1"}]'></skills-showcase-component>
+                    <skills-showcase-component title="Technology" skills='[{"skill":"GameMaker","level":"3"},{"skill":"Unity","level":"2"},{"skill":"Git","level":"2"},{"skill":"Godot","level":"1"},{"skill":"MATLAB","level":"1"}]'></skills-showcase-component>
+                </div>
+                <div class="text-container">
+                    <p><i class="material-icons">bolt</i> means that I have prior experience working with the language/technology and have at least one project to point to.<br/><br/><i class="material-icons">bolt</i><i class="material-icons">bolt</i> means that I have intermediate experience, either having multiple projects, a large project or have used the language/technology often enough to know how to use it well.<br/><br/><i class="material-icons">bolt</i><i class="material-icons">bolt</i><i class="material-icons">bolt</i> means that I use it everyday, or just know the language/technology very, very well.</p>
+                </div>
             </section>
 
             <!-- EXPERIENCE -->
