@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 html {
     background-color: black;
     font-family:'MuseoModerno', 'Courier New', Courier, monospace;
@@ -15,6 +19,8 @@ body {
     width: auto;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -92,6 +98,10 @@ section {
     scroll-margin-top: 200px;
 }
 
+a {
+    color: #cdf7e2;
+}
+
 .topheader {
     background-color: #141414;
     overflow: hidden;
@@ -99,6 +109,7 @@ section {
     top: 0;
     width: 100%;
     padding: 16px 0 0 0;
+    border-radius: 0 0 32px 32px;
 }
 
 .topnav {
@@ -106,17 +117,20 @@ section {
     justify-content: center;
     background-color: #656e77;
     padding: 8px 8px 8px 8px;
+    border-radius: 16px 16px 0 0;
 }
 
 .topnav a {
     color: #cdf7e2;
     text-align: center;
     padding: 2px 16px;
+    border-radius: 8px;
 }
 
 .topnav a:hover {
     background-color: #ffffff;
     color: #000000;
+    border-radius: 8px;
 }
 
 .topnav a.active {
@@ -129,6 +143,7 @@ section {
     justify-content: center;
     background-color: #3d4349;
     padding: 8px 8px 8px 8px;
+    border-radius: 0 0 32px 32px;
 }
 
 .subtopnav a {
@@ -140,11 +155,13 @@ section {
 .subtopnav a:hover {
     background-color: #ffffff;
     color: #000000;
+    border-radius: 8px;
 }
 
 .subtopnav a.active {
     background-color: #cdf7e2;
     color: #28312d;
+    border-radius: 8px;
 }
 
 .main {
@@ -202,4 +219,16 @@ showcase-component {
 
 .section-title {
     padding: 32px 0 16px 0;
+}
+
+footer {
+    padding: 16px 0 16px 0;
+    background-color: #656e77;
+    border-radius: 16px 16px 0 0;
+    justify-content: center;
+    display: flex;
+}
+
+.space-filler {
+    flex-grow: 1;
 }
