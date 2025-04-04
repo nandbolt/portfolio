@@ -37,6 +37,7 @@ class HeaderComponent extends HTMLElement
             <header>
                 <div class="topheader">
                     <div class="toptitle">
+                        <a href="/index.html"><img class="nblogo" src="/images/nb-logo-1.png" /></a>
                         <h1>Alexander Wilson</h1>
                         <h3>( Software Engineer | Game Designer )</h3>
                     </div>
