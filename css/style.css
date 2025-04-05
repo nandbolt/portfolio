@@ -330,3 +330,17 @@ footer {
     position: absolute;
     margin: -8px 0 0 16px;
 }
+
+@keyframes greetingColorShift {
+    0% {color: red;}
+    50% {color: yellow;}
+    100% {color: aqua;}
+}
+
+.greeting {
+    color: #cdf7e2;
+    animation-name: greetingColorShift;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
