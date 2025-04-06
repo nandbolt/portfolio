@@ -367,3 +367,9 @@ footer {
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 32px;
+}
