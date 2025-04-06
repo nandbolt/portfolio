@@ -38,7 +38,7 @@ class SkillsShowcaseComponent extends HTMLElement
         this.innerHTML = `
             <div class="skills-showcase">
                 <h3>${title}</h3>
-                <div class="horizontal-container">
+                <div class="horizontal-container-no-bg">
                     <div class="skills-showcase-text-container">
                         <ul class="skill-list">
                             ${skillList.length ? `${generateSkillsHTML(skillList)}` : ""}

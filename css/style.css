@@ -120,7 +120,7 @@ a:hover {
 .topnav {
     display: flex;
     justify-content: center;
-    background-color: rgba(101, 110, 119, 0.75);
+    background-color: #656e77;
     padding: 8px 8px 8px 8px;
     border-radius: 16px 16px 0 0;
 }
@@ -146,7 +146,7 @@ a:hover {
 .subtopnav {
     display: flex;
     justify-content: center;
-    background-color: rgba(61, 67, 73, 0.75);
+    background-color: #3d4349;
     padding: 8px 8px 8px 8px;
     border-radius: 0 0 32px 32px;
 }
@@ -179,6 +179,13 @@ a:hover {
 .dontcrash {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.horizontal-container-no-bg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 8px 8px 8px 8px;
 }
 
 .horizontal-container, .featured-horizontal-container {
@@ -295,7 +302,6 @@ article-showcase-component {
 
 .skills-showcase-text-container, .skillbars-showcase-text-container {
     margin: 8px 0 8px 0;
-    background-color: #242424;
     border-radius: 32px;
     padding: 8px;
 }
@@ -342,10 +348,22 @@ footer {
     100% {color: aqua;}
 }
 
+@keyframes highlightColorShift {
+    0% {color: #afbfd2;}
+    100% {color: #cdf7e2;}
+}
+
 .greeting {
     color: #cdf7e2;
     animation-name: greetingColorShift;
     animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.highlight {
+    animation-name: highlightColorShift;
+    animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
