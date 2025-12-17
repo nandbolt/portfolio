@@ -202,7 +202,7 @@ a:hover {
 }
 
 showcase-component {
-    width: 33%;
+    width: 450px;
     padding: 0 8px 0 8px;
     margin: 0 auto 0 auto;
     background-color: #141414;
@@ -213,7 +213,7 @@ showcase-component {
 }
 
 skills-showcase-component {
-    width: 50%;
+    width: 450px;
     padding: 0 8px 0 8px;
     margin: 0 auto 0 auto;
     background-color: #141414;
