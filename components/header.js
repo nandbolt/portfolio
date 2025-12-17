@@ -39,7 +39,7 @@ class HeaderComponent extends HTMLElement
                     <div class="toptitle">
                         <a href="/portfolio/index.html"><img class="nblogo" src="/portfolio/images/nb-logo-1.png" /></a>
                         <h1>Alexander Wilson</h1>
-                        <h3>( Software Engineer | Game Designer )</h3>
+                        <h3>( Game Developer | Computational Physics )</h3>
                     </div>
                     ${topNavLinks.length ? `<div class="topnav">${generateTopNavHTML(topNavLinks)}</div>` : ""}
                     ${subNavLinks.length ? `<div class="subtopnav">${generateSubNavHTML(subNavLinks)}</div>` : ""}
