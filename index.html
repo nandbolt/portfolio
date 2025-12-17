@@ -14,34 +14,38 @@
     <body>
         <header-component
             top-nav='[{"text":"Main","href":"#"},{"text":"All Projects","href":"pages/projects.html"},{"text":"Contact","href":"pages/contact.html"}]'
-            sub-nav='[{"text":"Top","href":"#"},{"text":"About","href":"#about"},{"text":"Skills","href":"#skills"},{"text":"Projects","href":"#projects"}]'>
+            sub-nav='[{"text":"Top","href":"#"},{"text":"Projects","href":"#projects"},{"text":"Skills","href":"#skills"},{"text":"About","href":"#about"}]'>
         </header-component>
         <div class="main">
             <!-- INTRO -->
-            <p id="world" class="dontcrash">Insert world here.</p>
-            <p class="dontcrash">
-                ||<br>
-                _---_______________________---_<br>
-                |---
-                <button onclick="player.keepForward()">^</button>
-                -----------------------|<br>
-                |
-                <button onclick="player.turnLeft()"><</button>
-                --
-                <button onclick="player.turnRight()">></button>
-                ---
-                <button onclick="game.restart()">R</button>
-                ------------
-                |<br>
-                |________--------------________|<br>
-                |________--------------________|<br>
-            </p>
             <div class="text-container">
                 <p id="greeting">
                     My name's Alex. What awaits you is a selection of projects and experiences that, to me, showcase my abilities as a
-                    software engineer, and some as a game designer. I had a blast putting this together and making this website from scratch, so I hope you enjoy your time here!<br/><!--<br/>(COMING SOON: For the intrepid, there is a hidden golden egg on every page. Have fun collecting!)<br/>--><br/>(Website last updated 12/17/2025)
+                    software engineer, and some as a game designer. I had a blast putting this together and making this website from scratch, so I hope you enjoy your time here!<br/><br/>(Website last updated 12/17/2025)
                 </p>
             </div>
+
+            <!-- PROJECTS -->
+            <section id="projects">
+                <h1 class="section-title">Projects</h1>
+                <div class="featured-horizontal-container">
+                    <showcase-component main-image="images/nbphysics-1.gif" title="nbphysics" company="nandbolt games" role="Sole Dev" tech="GameMaker, GML" teamSize="1" time="April 2025 - present" status="released, ongoing development" desc='A 2D hybrid physics engine made for GameMaker in GameMaker Studio 2 LTS. It supports collision detection and resolution of non-rotated rectangles, rotated rectangles, and circles. I made it because I plan to use it in my future games so it should get better over time!' project-link="pages/projects/nbphysics.html" ></showcase-component>
+                    <showcase-component main-image="images/vshift-1.gif" title="V-Shift" company="Propel Studios" role="Programmer" tech="Unity, C#" teamSize="7" time="September 2024 - present" status="released, ongoing development" desc="An online multiplayer, fast-paced action platformer available to play on <a href='https://store.steampowered.com/app/3361890/VShift/'>Steam</a>. I worked as a programmer on bot AI and other game systems, along with designing the combat trials and playing a role in the overall game's design." project-link="pages/projects/vshift.html" ></showcase-component>
+                    <showcase-component main-image="images/iliagc-1.gif" title="ILIAGC" company="nandbolt games, Coolmath Games" role="Sole Dev" tech="GameMaker" teamSize="1" time="April 2023 - April 2025" status="released" desc="Part 2D platformer + part graphing calculator, ILIAGC was designed to push people to think about math differently. I worked with <a href='https://www.coolmathgames.com/0-iliagc'>Coolmath Games</a> to have it published on their site." project-link="pages/projects/iliagc.html" ></showcase-component>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="skills">
+                <h1 class="section-title">Skills</h1>
+                <div class="featured-horizontal-container">
+                    <skills-showcase-component title="Programming Languages" skills='[{"skill":"GML","level":"3"},{"skill":"C#","level":"2"},{"skill":"Python","level":"2"},{"skill":"JavaScript","level":"2"},{"skill":"Lua","level":"1"}]'></skills-showcase-component>
+                    <skills-showcase-component title="Technology" skills='[{"skill":"GameMaker","level":"3"},{"skill":"Unity","level":"2"},{"skill":"Git","level":"2"},{"skill":"Godot","level":"1"},{"skill":"MATLAB","level":"1"}]'></skills-showcase-component>
+                </div>
+                <div class="text-container">
+                    <p><i class="material-icons">bolt</i> means that I have prior experience working with the language/technology and have at least one project to point to.<br/><br/><i class="material-icons">bolt</i><i class="material-icons">bolt</i> means that I have intermediate experience, either having multiple projects, a large project or have used the language/technology often enough to know how to use it well.<br/><br/><i class="material-icons">bolt</i><i class="material-icons">bolt</i><i class="material-icons">bolt</i> means that I use it everyday, or just know the language/technology very, very well.</p>
+                </div>
+            </section>
             
             <!-- ABOUT -->
             <section id="about">
@@ -80,37 +84,25 @@
                 </div>
             </section>
             
-            <!-- SKILLS -->
-            <section id="skills">
-                <h1 class="section-title">Skills</h1>
-                <div class="featured-horizontal-container">
-                    <skills-showcase-component title="Programming Languages" skills='[{"skill":"GML","level":"3"},{"skill":"C#","level":"2"},{"skill":"Python","level":"2"},{"skill":"JavaScript","level":"2"},{"skill":"Lua","level":"1"}]'></skills-showcase-component>
-                    <skills-showcase-component title="Technology" skills='[{"skill":"GameMaker","level":"3"},{"skill":"Unity","level":"2"},{"skill":"Git","level":"2"},{"skill":"Godot","level":"1"},{"skill":"MATLAB","level":"1"}]'></skills-showcase-component>
-                </div>
-                <div class="text-container">
-                    <p><i class="material-icons">bolt</i> means that I have prior experience working with the language/technology and have at least one project to point to.<br/><br/><i class="material-icons">bolt</i><i class="material-icons">bolt</i> means that I have intermediate experience, either having multiple projects, a large project or have used the language/technology often enough to know how to use it well.<br/><br/><i class="material-icons">bolt</i><i class="material-icons">bolt</i><i class="material-icons">bolt</i> means that I use it everyday, or just know the language/technology very, very well.</p>
-                </div>
-            </section>
-
-            <!-- EXPERIENCE -->
-             <!--
-            <section id="experience">
-                <h1 class="section-title">Experience</h1>
-                <div class="featured-horizontal-container">
-                    <showcase-component main-image="images/vshift-1.gif" title="V-Shift" company="Propel Studios" role="Programmer" tech="Unity, C#" teamSize="7" time="8 months" status="released" desc="An online multiplayer, fast-paced action platformer available to play on <a href='https://store.steampowered.com/app/3361890/VShift/'>Steam</a>. I worked as a programmer on bot AI and other game systems, along with designing the combat trials and playing a role in the overall game's design." project-link="pages/projects/v-shift.html" ></showcase-component>
-                </div>
-            </section>
-            -->
-
-            <!-- PROJECTS -->
-            <section id="projects">
-                <h1 class="section-title">Projects</h1>
-                <div class="featured-horizontal-container">
-                    <showcase-component main-image="images/nbphysics-1.gif" title="nbphysics" company="nandbolt games" role="Sole Dev" tech="GameMaker, GML" teamSize="1" time="April 2025 - present" status="released, ongoing development" desc='A 2D hybrid physics engine made for GameMaker in GameMaker Studio 2 LTS. It supports collision detection and resolution of non-rotated rectangles, rotated rectangles, and circles. I made it because I plan to use it in my future games so it should get better over time!' project-link="pages/projects/nbphysics.html" ></showcase-component>
-                    <showcase-component main-image="images/vshift-1.gif" title="V-Shift" company="Propel Studios" role="Programmer" tech="Unity, C#" teamSize="7" time="8 months" status="released" desc="An online multiplayer, fast-paced action platformer available to play on <a href='https://store.steampowered.com/app/3361890/VShift/'>Steam</a>. I worked as a programmer on bot AI and other game systems, along with designing the combat trials and playing a role in the overall game's design." project-link="pages/projects/vshift.html" ></showcase-component>
-                    <showcase-component main-image="images/iliagc-1.gif" title="ILIAGC" company="nandbolt games, Coolmath Games" role="Sole Dev" tech="GameMaker" teamSize="1" time="3 months" status="released" desc="Part 2D platformer + part graphing calculator, ILIAGC was designed to push people to think about math differently. I worked with <a href='https://www.coolmathgames.com/0-iliagc'>Coolmath Games</a> to have it published on their site." project-link="pages/projects/iliagc.html" ></showcase-component>
-                </div>
-        </section>
+            <!-- DONTCRASH -->
+            <p id="world" class="dontcrash">Insert world here.</p>
+            <p class="dontcrash">
+                ||<br>
+                _---_______________________---_<br>
+                |---
+                <button onclick="player.keepForward()">^</button>
+                -----------------------|<br>
+                |
+                <button onclick="player.turnLeft()"><</button>
+                --
+                <button onclick="player.turnRight()">></button>
+                ---
+                <button onclick="game.restart()">R</button>
+                ------------
+                |<br>
+                |________--------------________|<br>
+                |________--------------________|<br>
+            </p>
     </div>
     </body>
     <footer-component></footer-component>
